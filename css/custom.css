@@ -16,6 +16,9 @@ body {
     background-image: url("../assets/backgrounds/c_image.jpg");
     max-width:100%
   }
+  .services {
+    background-image: url("../assets/backgrounds/s_image.jpg");
+  }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .marginx {margin-bottom: 45px;}
@@ -124,4 +127,35 @@ body {
     position:absolute;
     top: 40px;
     right: 10px;
+    visibility: hidden;
   }
+
+  .form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .form-control.success input {
+   border-color: #2ecc71;
+  }
+
+  .form-control.error input {
+    border-color: #e74c3c;
+   }
+
+   .form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+   }
+ 
+   .form-control.error i.fa-exclamation-circle {
+     color: #e74c3c;
+     visibility: visible;
+    }
+
+    .form-control.error small {
+        color: #e74c3c;
+        visibility: visible;
+       }

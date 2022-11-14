@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,13 +44,22 @@
     <img src="./assets/mouse_click.png" class="img-responsive img-circle margin" style="display:inline;" alt="Bird" width="20" height="10">
   </div>
   
+
+  <div class="container-fluid bg-3 text-center">    
+    <h3 class="margin">ABOUT US</h3><br>
+    <p>When you work with us, you are part of a team of committed collaborators. All aspects of our software development process are integrated,interactive and agile</p>
+
+    <p>Our approach unifies design,development and product management to create exceptional products</p>
+    <p>We start each project by understanding your busines goals, the user's needs and the product requirements</p>
+    <p>Then we help translate them into effective and elegant solutions.</p>
+  </div>
+
   <!-- Second Container -->
-  <div class="container-fluid bg-2 text-center">
-    <h3 class="margin">What Am I?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <a href="#" class="btn btn-default btn-lg">
-      <span class="glyphicon glyphicon-search"></span> Search
-    </a>
+  <div class="container-fluid bg-2 text-center services">
+    <h3 class="margin">SERVICES</h3>
+    <p>Before we sign a contract or write a line of code, our team will spend the neccessary time needed to understand your product vision</p>
+    <p>The outcome of this scoping session's proposal or high-level statement of work</p>
+    <p>based on your requirements, we can provide a complete offering or just the pieces you need</p>
   </div>
 
   
@@ -116,13 +124,13 @@
     <form id="contact-us-form">
         <div class="form-row">
          <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="name" placeholder="enter name here">
+                <input type="text" class="form-control success" id="name" placeholder="enter name here">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
               </div>
           <div class="form-group col-md-6">
-            <input type="email" class="form-control" id="email" placeholder="sample-email@test.com">
+            <input type="email" class="form-control error" id="email" placeholder="sample-email@test.com">
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
@@ -138,7 +146,7 @@
         </div>
         <div class="form-row">
             <div class="form-group col-md-4">
-                <button type="submit" class="btn btn-primary btn-block pull-left"><span class="glyphicon glyphicon-send"></span>  Send</button>
+                <button type="submit" id="submit" class="btn btn-primary btn-block pull-left"><span class="glyphicon glyphicon-send"></span>  Send</button>
             </div>
         </div>
       </form>
