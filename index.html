@@ -9,6 +9,7 @@
    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     <title>Delani Studios</title>
 </head>
@@ -57,14 +58,17 @@
   <div class="container-fluid bg-3 text-center">    
     <h3 class="margin">WHAT WE DO</h3><br>
     <div class="row">
-      <div class="col-sm-4"> 
+      <div class="col col-md-4"> 
         <img src="./assets/services_icons/design_icon.png" class="img-responsive marginx" alt="Image">
+        <p style="text-align:left">DESIGN</p>
       </div>
-      <div class="col-sm-4"> 
+      <div class="col col-md-4"> 
         <img src="./assets/services_icons/dev_icon.png" class="img-responsive marginx" alt="Image">
+        <p style="text-align:left">DEVELOPMENT</p>
       </div>
-      <div class="col-sm-4"> 
+      <div class="col col-md-4"> 
         <img src="./assets/services_icons/product_icon.png" class="img-responsive marginx" alt="Image">
+        <p style="text-align:left">PRODUCT MANAGEMENT</p>
       </div>
     </div>
   </div>
@@ -109,23 +113,32 @@
   <div class="container-fluid text-center my-form-bg">
     <h3 class="margin">Contact us</h3>
    <div class="my-form">
-    <form>
+    <form id="contact-us-form">
         <div class="form-row">
          <div class="form-group col-md-6">
                 <input type="text" class="form-control" id="name" placeholder="enter name here">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
               </div>
           <div class="form-group col-md-6">
             <input type="email" class="form-control" id="email" placeholder="sample-email@test.com">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
           </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-12">
                 <textarea class="form-control" id="message" rows="3" placeholder="enter your message here"></textarea>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
               </div>          
         </div>
         <div class="form-row">
-            <div class="form-group col-md-12">
-                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span>  Send</button>
+            <div class="form-group col-md-4">
+                <button type="submit" class="btn btn-primary btn-block pull-left"><span class="glyphicon glyphicon-send"></span>  Send</button>
             </div>
         </div>
       </form>
